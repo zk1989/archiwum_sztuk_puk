@@ -1,0 +1,72 @@
+[
+  {
+    "id":          "olympia-2001-knorowski",
+    "year":        2001,
+    "month":       "Kwiecień",
+    "title":       "\"Przyleciały\" - Janusz Oskar Knorowski",
+    "description": "Wernisaż",
+    "thumbnail":   "photos/galeria-olympia/2001/knorowski/04.jpg",
+    "photos": [
+      { "file": "photos/galeria-olympia/2001/knorowski/01.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/02.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/03.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/04.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/05.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/06.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/07.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/08.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/09.jpg" },
+      { "file": "photos/galeria-olympia/2001/knorowski/10.jpg" }
+    ]
+  },
+  {
+    "id":          "olympia-2004-kaczmarska",
+    "year":        2004,
+    "month":       "Kwiecień",
+    "title":       "Wernisaż — Małgorzata Kaczmarska",
+    "description": "Otwarcie wystawy Małgorzaty Kaczmarskiej",
+    "thumbnail":   "photos/galeria-olympia/2004/kaczmarska/Dsc00004.jpg",
+    "photos": [
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00001.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00002.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00003.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00004.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00005.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00006.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00007.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00009.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00010.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00011.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00012.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00015.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00016.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00017.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00018.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00019.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00020.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00022.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00023.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00024.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00027.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00028.jpg" },
+      { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00029.jpg" }
+    ]
+  },
+  {
+    "id":          "olympia-2004-bogatka",
+    "year":        2004,
+    "month":       "Listopad",
+    "title":       "\"(na?) Zachód Słońca\" - Łukasz Baksik, Piotr Bogatka",
+    "description": "Fotografia",
+    "thumbnail":   "photos/galeria-olympia/2004/bogatka/DSC01938.jpg",
+    "photos": [
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01938.jpg" },
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01939.jpg" },
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01940.jpg" },
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01941.jpg" },
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01942.jpg" },
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01943.jpg" },
+      { "file": "photos/galeria-olympia/2004/bogatka/DSC01944.jpg" }
+    ]
+  }
+]

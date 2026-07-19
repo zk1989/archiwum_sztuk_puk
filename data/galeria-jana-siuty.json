@@ -1,0 +1,22 @@
+[
+  {
+    "id":          "siuta-2011-tomala",
+    "year":        2011,
+    "month":       "Październik",
+    "title":       "\"Malarstwo do kwadratu\" — Jerzy Tomala",
+    "description": "Otwarcie wystawy Jerzego Tomali",
+    "thumbnail":   "photos/galeria-jana-siuty/2011/tomala/DSCN1421.jpg",
+    "photos": [
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1421.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1422.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1423_1.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1424.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1425.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1426.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1427.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1429.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1430.jpg" },
+      { "file": "photos/galeria-jana-siuty/2011/tomala/DSCN1431.jpg" }
+    ]
+  }
+]

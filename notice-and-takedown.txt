@@ -1,0 +1,25 @@
+Umieść na stronie wyraźną informację (tzw. klauzulę notice-and-takedown):
+Napisz, że strona ma charakter niekomercyjny, archiwalny, a w przypadku zastrzeżeń co do praw autorskich lub wizerunku,
+prosisz o kontakt w celu natychmiastowego usunięcia danego zdjęcia.
+Rozbuduj treść klauzuli na stronie
+Nie ograniczaj się do suchej informacji o usuwaniu zdjęć. Stwórz transparentny i życzliwy komunikat w widocznym miejscu (np. w stopce strony lub sekcji „O projekcie”).
+
+Napisz wprost:
+
+Cel projektu: Strona jest prywatnym, niekomercyjnym archiwum społecznym, którego celem jest uratowanie od zapomnienia historii lokalnych wernisaży z lat 2001–2016.
+
+Kwestia autorstwa: Wyjaśnij sytuację: „Zdjęcia pochodzą z prywatnych zbiorów [Imię Żyjącego Kolegi] oraz jego zmarłego przyjaciela [Imię/Inicjały]. Ze względu na upływ czasu i brak oznaczeń plików, precyzyjne ustalenie autorstwa każdego kadru jest niemożliwe”.
+
+Procedura usuwania: Podaj bezpośredni, działający adres e-mail i zadeklaruj: „Jeśli jesteś autorem zdjęcia, spadkobiercą autora lub rozpoznajesz się na fotografii i nie życzysz sobie jej publikacji – napisz do nas. Zdjęcie zostanie usunięte w ciągu 24/48 godzin”.
+2. Techniczne ograniczenie dostępu
+Skoro pliki mają fatalną jakość, zabezpiecz je tak, aby nikt nie mógł zarzucić Ci, że „udostępniasz czyjąś twórczość całemu światu do pobrania”.
+
+Zablokuj indeksowanie w Google Grafika: Poproś programistę (lub ustaw to sam w pliku robots.txt), aby zablokował robotom Google dostęp do folderu ze zdjęciami. Dzięki temu Twoja strona będzie widoczna dla ludzi, ale same zdjęcia nie będą wyskakiwać w wyszukiwarce grafik, gdy ktoś wpisze nazwisko zmarłego przyjaciela lub konkretnego artysty.
+
+Wyłącz prawy przycisk myszy: Prosty skrypt blokujący kliknięcie prawym przyciskiem myszy na zdjęciu (blokada zapisu) nie powstrzyma zaawansowanego użytkownika, ale dla większości osób będzie jasnym sygnałem: te zdjęcia służą tylko do oglądania, nie do kopiowania.
+3. Zgoda żyjącego kolegi (Absolutne minimum)
+Skoro istnieje ryzyko, że część (lub całość) zdjęć zrobił Twój żyjący kolega, musisz mieć jego wyraźne przyzwolenie. Wystarczy krótka wiadomość e-mail lub SMS od niego o treści:
+
+„Wyrażam zgodę na niekomercyjną publikację na stronie [AdresStrony] zdjęć z wernisaży z lat 2001–2016 pochodzących z mojego archiwum i oświadczam, że nie będę wnosił z tego tytułu żadnych roszczeń finansowych ani prawnych”.
+
+To zabezpiecza Cię przed nagłą zmianą zdania z jego strony lub ewentualnym konfliktem w przyszłości.

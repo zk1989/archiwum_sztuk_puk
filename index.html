@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Archiwum Sztuk Puk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ACCESS GATE -->
+  <div id="gate-overlay" class="gate-overlay">
+    <form id="gate-form" class="gate-form">
+      <p class="gate-form__label">Ta strona jest dostępna tylko dla zaproszonych osób.<br>Podaj hasło:</p>
+      <input id="gate-input" class="gate-form__input" type="password" autocomplete="off" autofocus>
+      <button type="submit" class="gate-form__btn">Wejdź</button>
+      <p id="gate-error" class="gate-form__error">Błędne hasło.</p>
+    </form>
+  </div>
+
+  <div id="site-content">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__brand">
+      <img src="sztuk_puk.gif" alt="Sztuk Puk" class="header__logo">
+      <h1 class="header__title">Archiwum <em>Sztuk Puk</em></h1>
+    </div>
+    <div class="header__subtitle">2001&ndash;2016</div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" data-page="about"
+       onclick="showPage('about'); return false;">O archiwum</a>
+    <a href="#" data-page="venues"
+       onclick="showPage('venues'); state.history=[]; return false;">Wydarzenia</a>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- LEVEL 1: VENUE LIST -->
+    <div id="page-venues" class="page">
+      <div class="intro">
+        <p>Wybierz galerię lub instytucję, by latami przeglądać poszczególne wydarzenia.</p>
+      </div>
+      <div class="venues-container">
+        <!-- populated by JS -->
+      </div>
+    </div>
+
+    <!-- LEVEL 2: YEARS AT A VENUE -->
+    <div id="page-years" class="page">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- LEVEL 3: EVENTS IN A YEAR -->
+    <div id="page-events" class="page">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- LEVEL 4: EVENT GALLERY -->
+    <div id="page-event" class="page">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- ABOUT -->
+    <div id="page-about" class="page">
+      <div class="about">
+
+        <h2>O archiwum</h2>
+        <p>
+          Archiwum Sztuk Puk gromadzi dokumentację wydarzeń kulturalnych.
+        </p>
+
+        <h2>Od Filipa?</h2>
+        <p>
+        ...
+        </p>
+
+        <h2>Jak przeglądać</h2>
+        <p>
+          Zacznij od listy miejsc (zakładka <em>Wydarzenia</em>). Wybierz instytucję,
+          potem rok, potem konkretne wydarzenie. W galerii kliknij zdjęcie, by je powiększyć.
+          W lightboxie nawiguj strzałkami klawiatury lub przyciskami na ekranie.
+          Przycisk <em>Powrót</em> cofa do poprzedniego poziomu.
+        </p>
+
+        <h2>Zgłaszanie naruszeń praw</h2>
+        <p>
+          Jeśli któryś z materiałów narusza Twoje prawa autorskie lub prawo do wizerunku,
+          możesz zgłosić to do usunięcia. Zasady zgłaszania opisane są na stronie
+          <a href="#" onclick="showPage('takedown'); return false;">Zgłaszanie naruszeń praw</a>.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- TAKEDOWN / NOTICE POLICY -->
+    <div id="page-takedown" class="page">
+      <div class="about">
+
+        <a class="back-link" href="#" onclick="showPage('about'); return false;">Powrót</a>
+
+        <h2>Zgłaszanie naruszeń praw</h2>
+        <p>
+          Archiwum Sztuk Puk publikuje zdjęcia z wydarzeń kulturalnych w dobrej wierze,
+          w celach dokumentacyjnych i archiwalnych. Jeśli uważasz, że jakiś materiał
+          narusza Twoje prawa autorskie, prawo do wizerunku lub inne prawa, możesz
+          zgłosić to do usunięcia.
+        </p>
+
+        <h2>Jak zgłosić</h2>
+        <p>
+          Wyślij wiadomość na adres <a href="mailto:jakisadres@jakasdomena.com">jakisadres@jakasdomena.com</a>
+          zawierającą:
+        </p>
+        <p>
+          1. Adres (URL) lub opis materiału, którego dotyczy zgłoszenie.<br>
+          2. Wskazanie prawa, które Twoim zdaniem zostało naruszone (np. autorskie,
+          wizerunek).<br>
+          3. Dane kontaktowe zgłaszającego.<br>
+          4. Oświadczenie, że zgłoszenie jest dokonywane w dobrej wierze.
+        </p>
+
+        <h2>Co dzieje się dalej</h2>
+        <p>
+          Zgłoszenia rozpatrywane są możliwie szybko. Sporny materiał zostaje
+          usunięty lub ukryty na czas wyjaśnienia sprawy. O rezultacie
+          poinformujemy zgłaszającego drogą mailową.
+        </p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox__inner" onclick="event.stopPropagation()">
+      <button class="lightbox__close" onclick="closeLightbox()">Zamknij &times;</button>
+      <img id="lightbox-image" class="lightbox__image" src="" alt="">
+      <div class="lightbox__bar">
+        <button class="lightbox__btn" onclick="lightboxPrev()">&#8592; poprzednie</button>
+        <span id="lightbox-counter" class="lightbox__counter">01 / 01</span>
+        <button class="lightbox__btn" onclick="lightboxNext()">następne &#8594;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer__text">Archiwum Sztuk Puk</span>
+    <a class="footer__text footer__link" href="#" data-page="takedown"
+       onclick="showPage('takedown'); return false;">Zgłaszanie naruszeń praw</a>
+  </footer>
+
+  </div>
+
+  <script src="js/gate.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

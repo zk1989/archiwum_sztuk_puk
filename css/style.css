@@ -1,0 +1,761 @@
+/* ARCHIWUM FOTOGRAFICZNE — style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --ecru:    #f5f0e8;
+  --beige:   #e8e0d0;
+  --taupe:   #b8a898;
+  --taupe-dk:#8a7a6a;
+  --ink:     #2a2218;
+  --ink-lt:  #5a4e42;
+  --rule:    #c8b8a8;
+  --accent:  #7a5c3a;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--ecru);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.6;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--ecru);
+}
+
+/* ── ACCESS GATE ────────────────────────────────────── */
+
+#site-content { display: none; }
+body.unlocked #site-content { display: block; }
+body.unlocked #gate-overlay { display: none; }
+
+.gate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ecru);
+}
+
+.gate-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 2rem 2.5rem;
+  border: 2px solid var(--ink);
+  background: var(--beige);
+  max-width: 22rem;
+  text-align: center;
+}
+
+.gate-form__label {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.gate-form__input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid var(--taupe-dk);
+  background: var(--ecru);
+  color: var(--ink);
+}
+
+.gate-form__btn {
+  padding: 0.5rem 1.2rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  border: 2px solid var(--ink);
+  background: var(--accent);
+  color: var(--ecru);
+  cursor: pointer;
+}
+
+.gate-form__btn:hover { opacity: 0.85; }
+
+.gate-form__error {
+  color: #a33;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.gate-form__error.show { display: block; }
+
+/* ── HEADER ─────────────────────────────────────────── */
+
+.header {
+  border-bottom: 2px solid var(--ink);
+  padding: 2rem 2.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo {
+  height: 2.6rem;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+}
+
+.header__title {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 1.55rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.header__title em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.header__subtitle {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--taupe-dk);
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+}
+
+/* ── NAV ─────────────────────────────────────────────── */
+
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 0 2.5rem;
+  display: flex;
+  gap: 0;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.65rem 1.2rem 0.55rem;
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-lt);
+  text-decoration: none;
+  border-right: 1px solid var(--rule);
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav a:first-child {
+  border-left: 1px solid var(--rule);
+}
+
+.nav a:hover,
+.nav a.active {
+  background: var(--beige);
+  color: var(--ink);
+}
+
+/* ── MAIN LAYOUT ─────────────────────────────────────── */
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem 4rem;
+}
+
+/* ── INTRO BLOCK ─────────────────────────────────────── */
+
+.intro {
+  border-left: 3px solid var(--taupe);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  background: var(--beige);
+}
+
+.intro p {
+  font-style: italic;
+  color: var(--ink-lt);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ── VENUE LIST (level 1) ────────────────────────────── */
+
+.venue-list {
+  border: 1.5px solid var(--rule);
+}
+
+.venue-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.05rem 1.2rem;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+  background: var(--ecru);
+  transition: background 0.12s;
+  cursor: pointer;
+}
+
+.venue-row:last-child {
+  border-bottom: none;
+}
+
+.venue-row:hover {
+  background: var(--beige);
+}
+
+.venue-row__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.venue-row__name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.venue-row__city {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--taupe-dk);
+}
+
+.venue-row__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+  flex-shrink: 0;
+}
+
+.venue-row__range {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.8rem;
+  color: var(--taupe);
+  letter-spacing: 0.05em;
+}
+
+.venue-row__count {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--taupe-dk);
+}
+
+.venue-row__arrow {
+  font-size: 0.9rem;
+  color: var(--taupe);
+  transition: transform 0.15s, color 0.15s;
+}
+
+.venue-row:hover .venue-row__arrow {
+  transform: translateX(3px);
+  color: var(--ink);
+}
+
+/* ── SECTION HEADER (levels 2–4) ─────────────────────── */
+
+.section-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-header__eyebrow {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe-dk);
+  margin-bottom: 0.4rem;
+}
+
+.section-header__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 0.2rem;
+}
+
+.section-header__sub {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--taupe-dk);
+}
+
+.section-header__desc {
+  margin-top: 0.8rem;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--ink-lt);
+  max-width: 520px;
+  line-height: 1.65;
+}
+
+/* ── YEAR LIST (level 2) ─────────────────────────────── */
+
+.year-list {
+  border: 1.5px solid var(--rule);
+}
+
+.year-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.95rem 1.2rem;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+  background: var(--ecru);
+  transition: background 0.12s;
+  cursor: pointer;
+}
+
+.year-row:last-child {
+  border-bottom: none;
+}
+
+.year-row:hover {
+  background: var(--beige);
+}
+
+.year-row__year {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.35rem;
+  color: var(--taupe);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  width: 4rem;
+}
+
+.year-row__line {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.year-row__count {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--taupe-dk);
+  flex-shrink: 0;
+}
+
+.year-row__arrow {
+  font-size: 0.9rem;
+  color: var(--taupe);
+  flex-shrink: 0;
+  transition: transform 0.15s, color 0.15s;
+}
+
+.year-row:hover .year-row__arrow {
+  transform: translateX(3px);
+  color: var(--ink);
+}
+
+/* ── EVENT GRID (level 3) ────────────────────────────── */
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5px;
+  border: 1.5px solid var(--rule);
+}
+
+.event-card {
+  background: var(--ecru);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s;
+  position: relative;
+}
+
+.event-card:hover {
+  background: var(--beige);
+}
+
+.event-card__thumbnail {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--beige);
+  position: relative;
+}
+
+.event-card__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(15%) contrast(0.92) brightness(1.02);
+  transition: filter 0.2s, transform 0.3s;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.event-card:hover .event-card__thumbnail img {
+  filter: sepia(5%) contrast(1) brightness(1.05);
+  transform: scale(1.02);
+}
+
+.event-card__count {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--ecru);
+  background: rgba(42,34,24,0.55);
+  padding: 0.15rem 0.4rem;
+}
+
+.event-card__info {
+  padding: 0.9rem 1rem 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.event-card__date {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--taupe-dk);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.event-card__title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+/* ── EVENT HEADER (level 4) ──────────────────────────── */
+
+.back-link {
+  display: inline-block;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--taupe-dk);
+  text-decoration: none;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.back-link:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.back-link::before {
+  content: '← ';
+}
+
+.event-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.event-header__meta {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--taupe-dk);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.event-header__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.event-header__desc {
+  margin-top: 0.7rem;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--ink-lt);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* ── PHOTO GRID (level 4) ────────────────────────────── */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo-grid__item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--beige);
+  cursor: pointer;
+  position: relative;
+}
+
+.photo-grid__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(12%) contrast(0.93) brightness(1.02);
+  transition: filter 0.2s, transform 0.35s;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.photo-grid__item:hover img {
+  filter: sepia(3%) contrast(1.02) brightness(1.06);
+  transform: scale(1.04);
+}
+
+.photo-grid__number {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.5rem;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: rgba(245,240,232,0.7);
+  pointer-events: none;
+}
+
+/* ── LIGHTBOX ────────────────────────────────────────── */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(30,24,16,0.93);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox__inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox__image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  filter: sepia(8%) contrast(0.95);
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.lightbox__bar {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.lightbox__btn {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  background: none;
+  border: 1px solid var(--taupe-dk);
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.lightbox__btn:hover {
+  color: var(--ecru);
+  border-color: var(--ecru);
+}
+
+.lightbox__counter {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  color: var(--taupe);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  transition: color 0.15s;
+}
+
+.lightbox__close:hover {
+  color: var(--ecru);
+}
+
+/* ── ABOUT PAGE ──────────────────────────────────────── */
+
+.about {
+  max-width: 560px;
+}
+
+.about h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  margin-top: 2rem;
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+}
+
+.about h2:first-child {
+  margin-top: 0;
+}
+
+.about p {
+  font-size: 0.88rem;
+  color: var(--ink-lt);
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+}
+
+.about pre {
+  background: var(--beige);
+  border-left: 3px solid var(--taupe);
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 1rem;
+  overflow-x: auto;
+}
+
+.about code {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 0.78rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.about p code {
+  background: var(--beige);
+  padding: 0.1em 0.3em;
+}
+
+.about__signature {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: 'Special Elite', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  color: var(--taupe-dk);
+  text-transform: uppercase;
+}
+
+/* ── FOOTER ──────────────────────────────────────────── */
+
+.footer {
+  border-top: 1px solid var(--rule);
+  padding: 1.2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--taupe-dk);
+  text-transform: uppercase;
+}
+
+.footer__link {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.footer__link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ── PAGES ───────────────────────────────────────────── */
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}

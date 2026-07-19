@@ -1,0 +1,20 @@
+[
+  {
+    "id":          "galeria-olympia",
+    "name":        "Galeria Olympia",
+    "city":        "Kraków",
+    "description": "Jedna z najważniejszych galerii sztuki współczesnej w Polsce, działająca od 1999 roku. https://olympiagaleria.eu/"
+  },
+  {
+    "id":          "piekny-pies",
+    "name":        "Klub Piękny Pies",
+    "city":        "Kraków",
+    "description": "Powstał w 2002 roku."
+  },
+  {
+    "id":          "galeria-jana-siuty",
+    "name":        "Galeria Jana Siuty",
+    "city":        "Kraków",
+    "description": "???"
+  }
+]
