@@ -21,5 +21,44 @@
       { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00872.jpg" },
       { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00874.jpg" }
     ]
+  },
+  {
+    "id":          "galeria-2-swiaty-2004-dagmara-kwiatek",
+    "year":        2004,
+    "month":       "Październik",
+    "title":       "Malarstwo",
+    "thumbnail":   "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0033.jpg",
+    "photos": [
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0033.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0034.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0036.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0037.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0041.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0043.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0044.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0046.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0047.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/dagmara-kwiatek/DSCN0050.jpg" }
+    ]
+  },
+  {
+    "id":          "galeria-2-swiaty-2004-andrzej-raczkowski",
+    "year":        2004,
+    "month":       "Październik",
+    "title":       "Malarstwo - Andrzej Raczkowski",
+    "thumbnail":   "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0001.jpg",
+    "photos": [
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0001.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0004.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0005.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0006.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0007.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0008.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0027.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0028.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0031.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0033.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/andrzej-raczkowski/DSCN0034.jpg" }
+    ]
   }
 ]
