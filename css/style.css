@@ -315,15 +315,6 @@ body.unlocked #gate-overlay { display: none; }
   color: var(--taupe-dk);
 }
 
-.section-header__desc {
-  margin-top: 0.8rem;
-  font-style: italic;
-  font-size: 0.88rem;
-  color: var(--ink-lt);
-  max-width: 520px;
-  line-height: 1.65;
-}
-
 /* ── YEAR LIST (level 2) ─────────────────────────────── */
 
 .year-list {
@@ -518,15 +509,6 @@ body.unlocked #gate-overlay { display: none; }
   margin-bottom: 0.4rem;
 }
 
-.event-header__desc {
-  margin-top: 0.7rem;
-  font-style: italic;
-  font-size: 0.88rem;
-  color: var(--ink-lt);
-  line-height: 1.65;
-  max-width: 520px;
-}
-
 /* ── PHOTO GRID (level 4) ────────────────────────────── */
 
 .photo-grid {
@@ -689,37 +671,6 @@ body.unlocked #gate-overlay { display: none; }
   color: var(--ink-lt);
   line-height: 1.75;
   margin-bottom: 0.9rem;
-}
-
-.about pre {
-  background: var(--beige);
-  border-left: 3px solid var(--taupe);
-  padding: 0.8rem 1rem;
-  margin: 0.5rem 0 1rem;
-  overflow-x: auto;
-}
-
-.about code {
-  font-family: 'Special Elite', 'Courier New', monospace;
-  font-size: 0.78rem;
-  color: var(--ink);
-  line-height: 1.6;
-}
-
-.about p code {
-  background: var(--beige);
-  padding: 0.1em 0.3em;
-}
-
-.about__signature {
-  margin-top: 2.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
-  font-family: 'Special Elite', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.15em;
-  color: var(--taupe-dk);
-  text-transform: uppercase;
 }
 
 /* ── FOOTER ──────────────────────────────────────────── */

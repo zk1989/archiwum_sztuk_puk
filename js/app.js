@@ -5,9 +5,6 @@
 // ══════════════════════════════════════════════════════════════
 
 var state = {
-  currentPage:    "venues",   // "venues" | "years" | "events" | "event" | "about"
-  currentVenueId: null,
-  currentYear:    null,
   currentEvent:   null,
   lightboxIndex:  0,
   history:        [],         // navigation stack for the Back button
@@ -115,22 +112,7 @@ function showPage(name, previous) {
 function goBack() {
   var previous = state.history.pop();
   if (!previous) previous = "venues";
-
-  document.querySelectorAll(".page").forEach(function(el) {
-    el.classList.remove("active");
-  });
-
-  var map = {
-    "venues":  "page-venues",
-    "years":   "page-years",
-    "events":  "page-events",
-    "event":   "page-event",
-    "about":   "page-about"
-  };
-
-  var el = document.getElementById(map[previous]);
-  if (el) el.classList.add("active");
-  window.scrollTo(0, 0);
+  showPage(previous);
 }
 
 // ══════════════════════════════════════════════════════════════
@@ -192,7 +174,6 @@ function updateVenueRowMeta(venueId, events) {
 // ══════════════════════════════════════════════════════════════
 
 function openVenue(venueId) {
-  state.currentVenueId = venueId;
   var venue = venues.find(function(v) { return v.id === venueId; });
 
   loadVenueEvents(venueId, function(events) {
@@ -205,9 +186,6 @@ function openVenue(venueId) {
     html += '<div class="section-header__eyebrow">Miejsce</div>';
     html += '<div class="section-header__title">' + escHtml(venue.name) + '</div>';
     html += '<div class="section-header__sub">' + escHtml(venue.city) + '</div>';
-    if (venue.description) {
-      html += '<div class="section-header__desc">' + escHtml(venue.description) + '</div>';
-    }
     html += '</div>';
 
     html += '<div class="year-list">';
@@ -232,7 +210,6 @@ function openVenue(venueId) {
 // ══════════════════════════════════════════════════════════════
 
 function openYear(venueId, year) {
-  state.currentYear = year;
   var venue = venues.find(function(v) { return v.id === venueId; });
 
   loadVenueEvents(venueId, function(events) {
@@ -287,7 +264,6 @@ function openEvent(venueId, eventId) {
     html += '<div class="event-header">';
     html += '<div class="event-header__meta">' + escHtml(event.month) + ' ' + event.year + ' \u00b7 ' + escHtml(venue.name) + ', ' + escHtml(venue.city) + '</div>';
     html += '<div class="event-header__title">' + escHtml(event.title) + '</div>';
-    if (event.description) html += '<div class="event-header__desc">' + escHtml(event.description) + '</div>';
     html += '</div>';
 
     html += '<div class="photo-grid">';

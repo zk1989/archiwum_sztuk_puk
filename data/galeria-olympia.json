@@ -4,7 +4,6 @@
     "year":        2001,
     "month":       "Kwiecień",
     "title":       "\"Przyleciały\" - Janusz Oskar Knorowski",
-    "description": "Wernisaż",
     "thumbnail":   "photos/galeria-olympia/2001/knorowski/04.jpg",
     "photos": [
       { "file": "photos/galeria-olympia/2001/knorowski/01.jpg" },
@@ -24,7 +23,6 @@
     "year":        2004,
     "month":       "Kwiecień",
     "title":       "Wernisaż — Małgorzata Kaczmarska",
-    "description": "Otwarcie wystawy Małgorzaty Kaczmarskiej",
     "thumbnail":   "photos/galeria-olympia/2004/kaczmarska/Dsc00004.jpg",
     "photos": [
       { "file": "photos/galeria-olympia/2004/kaczmarska/Dsc00001.jpg" },
@@ -57,7 +55,6 @@
     "year":        2004,
     "month":       "Listopad",
     "title":       "\"(na?) Zachód Słońca\" - Łukasz Baksik, Piotr Bogatka",
-    "description": "Fotografia",
     "thumbnail":   "photos/galeria-olympia/2004/bogatka/DSC01938.jpg",
     "photos": [
       { "file": "photos/galeria-olympia/2004/bogatka/DSC01938.jpg" },
