@@ -1,6 +1,6 @@
 [
   {
-    "id":          "olympia-2001-knorowski",
+    "id":          "galeria-olympia-2001-knorowski",
     "year":        2001,
     "month":       "Kwiecień",
     "title":       "\"Przyleciały\" - Janusz Oskar Knorowski",
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "id":          "olympia-2004-kaczmarska",
+    "id":          "galeria-olympia-2004-kaczmarska",
     "year":        2004,
     "month":       "Kwiecień",
     "title":       "Wernisaż — Małgorzata Kaczmarska",
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "id":          "olympia-2004-bogatka",
+    "id":          "galeria-olympia-2004-bogatka",
     "year":        2004,
     "month":       "Listopad",
     "title":       "\"(na?) Zachód Słońca\" - Łukasz Baksik, Piotr Bogatka",
