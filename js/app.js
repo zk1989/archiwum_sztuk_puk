@@ -130,7 +130,6 @@ function renderVenues() {
     html += '<a class="venue-row" href="#" onclick="openVenue(\'' + venue.id + '\'); return false;">';
     html += '<div class="venue-row__left">';
     html += '<div class="venue-row__name">' + escHtml(venue.name) + '</div>';
-    html += '<div class="venue-row__city">' + escHtml(venue.city) + '</div>';
     html += '</div>';
     html += '<div class="venue-row__right">';
     html += '<span class="venue-row__arrow">\u2192</span>';
@@ -185,7 +184,6 @@ function openVenue(venueId) {
     html += '<div class="section-header">';
     html += '<div class="section-header__eyebrow">Miejsce</div>';
     html += '<div class="section-header__title">' + escHtml(venue.name) + '</div>';
-    html += '<div class="section-header__sub">' + escHtml(venue.city) + '</div>';
     html += '</div>';
 
     html += '<div class="year-list">';
@@ -219,7 +217,7 @@ function openYear(venueId, year) {
 
     html += '<a class="back-link" href="#" onclick="goBack(); return false;">Powrót do lat \u2014 ' + escHtml(venue.name) + '</a>';
     html += '<div class="section-header">';
-    html += '<div class="section-header__eyebrow">' + escHtml(venue.name) + ' \u00b7 ' + escHtml(venue.city) + '</div>';
+    html += '<div class="section-header__eyebrow">' + escHtml(venue.name) + '</div>';
     html += '<div class="section-header__title">' + year + '</div>';
     html += '<div class="section-header__sub">' + yearEvents.length + "\u00a0" + eventCountLabel(yearEvents.length) + '</div>';
     html += '</div>';
@@ -262,7 +260,7 @@ function openEvent(venueId, eventId) {
 
     html += '<a class="back-link" href="#" onclick="goBack(); return false;">Powrót do ' + event.year + ' \u2014 ' + escHtml(venue.name) + '</a>';
     html += '<div class="event-header">';
-    html += '<div class="event-header__meta">' + escHtml(event.month) + ' ' + event.year + ' \u00b7 ' + escHtml(venue.name) + ', ' + escHtml(venue.city) + '</div>';
+    html += '<div class="event-header__meta">' + escHtml(event.month) + ' ' + event.year + ' \u00b7 ' + escHtml(venue.name) + '</div>';
     html += '<div class="event-header__title">' + escHtml(event.title) + '</div>';
     html += '</div>';
 

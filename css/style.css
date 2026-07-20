@@ -240,14 +240,6 @@ body.unlocked #gate-overlay { display: none; }
   color: var(--ink);
 }
 
-.venue-row__city {
-  font-family: 'Special Elite', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--taupe-dk);
-}
-
 .venue-row__right {
   display: flex;
   flex-direction: column;

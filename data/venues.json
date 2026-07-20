@@ -1,22 +1,18 @@
 [
   {
     "id":          "galeria-olympia",
-    "name":        "Galeria Olympia",
-    "city":        "Kraków"
+    "name":        "Galeria Olympia"
   },
   {
     "id":          "klub-piekny-pies",
-    "name":        "Klub Piękny Pies",
-    "city":        "Kraków"
+    "name":        "Klub Piękny Pies"
   },
   {
     "id":          "galeria-jana-siuty",
-    "name":        "Galeria Jana Siuty",
-    "city":        "Kraków"
+    "name":        "Galeria Jana Siuty"
   },
   {
     "id":          "galeria-2-swiaty",
-    "name":        "Galeria 2 Światy",
-    "city":        ""
+    "name":        "Galeria 2 Światy"
   }
 ]
