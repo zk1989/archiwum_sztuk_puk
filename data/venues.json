@@ -5,7 +5,7 @@
     "city":        "Kraków"
   },
   {
-    "id":          "piekny-pies",
+    "id":          "klub-piekny-pies",
     "name":        "Klub Piękny Pies",
     "city":        "Kraków"
   },
@@ -13,5 +13,10 @@
     "id":          "galeria-jana-siuty",
     "name":        "Galeria Jana Siuty",
     "city":        "Kraków"
+  },
+  {
+    "id":          "galeria-2-swiaty",
+    "name":        "Galeria 2 Światy",
+    "city":        ""
   }
 ]

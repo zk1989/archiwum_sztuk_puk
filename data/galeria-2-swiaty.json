@@ -1,0 +1,25 @@
+[
+  {
+    "id":          "galeria-2-swiaty-2004-anna-drul",
+    "year":        2004,
+    "month":       "Lipiec",
+    "title":       "\"Poszukiwanie słowa\" - ceramika - Anna Drul",
+    "thumbnail":   "photos/galeria-2-swiaty/2004/anna-drul/DSC00850.jpg",
+    "photos": [
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00850.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00851.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00852.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00853.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00855.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00856.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00857.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00858.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00859.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00863.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00866.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00869.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00872.jpg" },
+      { "file": "photos/galeria-2-swiaty/2004/anna-drul/DSC00874.jpg" }
+    ]
+  }
+]
